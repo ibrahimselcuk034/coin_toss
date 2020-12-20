@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Coin Toss Game</title>
+</head>
+<body>
+    <div id="frame" class="container">
+        <br>
+        <h1 style="color:orangered">First Player to 5 Points Win!</h1>
+        <div class="selections bg-warning">Player Selected: <span id="player-selection"></span></div>
+        <br>
+        <div class="selections bg-warning">Computer Selected: <span id="computer-selection"></span></div>
+        <div id="center">
+                <div id="winner"></div>
+                <div id="image"></div>
+        </div>
+        
+        <div id="players">
+            <div id="player">Player: <span id="player-score">0</span></div>
+            <div id="computer">Computer: <span id="computer-score">0</span></div>
+        </div>
+        <br>
+        <div id="button">
+            <h3 style="color:orangered">Choose Your Selection</h3>
+            <button id="heads" class="buttons btn-danger">Heads</button>
+            <button id="tails" class="buttons btn-warning">Tails</button>
+        </div>
+        <div id="playAgain">
+            <button id="again" class="btn-danger">Play Again</button>
+        </div>
+        <br>
+        <br>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

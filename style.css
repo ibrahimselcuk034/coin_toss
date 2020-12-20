@@ -1,0 +1,165 @@
+@keyframes spin {
+  0% {
+    background: url("./heads.png");
+  }
+
+  25% {
+    background: url("./tails.png");
+  }
+
+  50% {
+    background: url("./heads.png");
+  }
+
+  75% {
+    background: url("./tails.png");
+  }
+
+  100% {
+    background: url("./heads.png");
+  }
+}
+
+#image {
+  background: url("./heads.png");
+  width: 158px;
+  height: 150px;
+  border-radius: 10%;
+  border: solid 3px orangered;
+  margin: auto;
+}
+
+.animate {
+  background: url("./heads.png");
+  width: 227px;
+  height: 337px;
+  animation-name: spin;
+  animation-iteration-count: 2;
+  animation-duration: 1s;
+}
+
+#frame {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+  background-color: darkblue;
+  border-radius: 5%;
+}
+
+#center {
+  width: 227px;
+  margin: 15px auto;
+}
+
+.selections,
+#player,
+#computer {
+  display: inline;
+  margin: 25px;
+  font-size: 1.3em;
+  color: white;
+}
+
+.selections {
+  /* background-color: rgb(230, 230, 17); */
+  width: 50%;
+  margin: auto;
+  border-radius: 5%;
+  color: black;
+}
+#heads {
+  border-radius: 10%;
+}
+
+#tails {
+  border-radius: 10%;
+}
+
+#playAgain {
+  display: none;
+}
+
+#again {
+  border-radius: 10%;
+}
+
+#player-score,
+#computer-score {
+  color: orangered;
+}
+
+@media screen and (max-width: 990px), print and (orientation: portrait) {
+  .selections,
+  #player,
+  #computer {
+    display: inline;
+    margin: 25px;
+    font-size: 1.3em;
+    color: white;
+  }
+
+  .selections {
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    color: black;
+  }
+}
+
+@media screen and (max-width: 768px), print and (orientation: portrait) {
+  .selections,
+  #player,
+  #computer {
+    display: inline;
+    margin: 25px;
+    font-size: 0.75em;
+    color: white;
+  }
+
+  .selections {
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    color: black;
+  }
+}
+
+@media screen and (max-width: 540px), print and (orientation: portrait) {
+  .selections,
+  #player,
+  #computer {
+    display: inline;
+    margin: 25px;
+    font-size: 0.75em;
+    color: white;
+  }
+
+  .selections {
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    color: black;
+  }
+}
+
+/* @media screen and (max-width: 440px), print and (orientation: portrait) {
+  .selections,
+  #player,
+  #computer {
+    display: inline;
+    margin: 25px;
+    font-size: 0.55em;
+    color: lightgray;
+  }
+
+
+} */
